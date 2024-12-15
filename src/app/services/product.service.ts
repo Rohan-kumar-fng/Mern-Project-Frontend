@@ -13,8 +13,8 @@ export class ProductService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getProductList(): Observable<Product[]> {
-    return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
+  getProductList(Id: number): Observable<Product[]> {
+    return this.httpClient.get<GetResponse>(this.baseUrl+"/search/findByCategoryId?id="+Id).pipe(
       map(response => response._embedded.products)
     );
   }
