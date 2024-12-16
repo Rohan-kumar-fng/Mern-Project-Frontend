@@ -6,12 +6,14 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 
 // Here I am going to involve Router Module(v2.0)
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductCategoryMenuComponent
   ],
   imports: [
     AppRoutingModule,
