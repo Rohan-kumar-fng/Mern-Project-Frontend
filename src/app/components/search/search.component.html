@@ -1,0 +1,14 @@
+<form class="form-header" onsubmit="return false;" method="GET">
+    <!-- Using Event binding Here for taking input value and passing in function to process -->
+    <input #myinput 
+           class="au-input au-input-xl" 
+           type="text"
+           placeholder="Search for Products ..."
+           (keyup.enter)="searchProduct(myinput.value)"
+           />
+    <button class="au-btn-submit"
+     (click)="searchProduct(myinput.value)"
+     >
+    Search
+    </button>
+</form>
