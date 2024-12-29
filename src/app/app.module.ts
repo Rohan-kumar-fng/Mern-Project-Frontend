@@ -8,6 +8,7 @@ import { ProductService } from './services/product.service';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 // Here I am going to involve Router Module(v2.0)
 @NgModule({
@@ -15,7 +16,8 @@ import { SearchComponent } from './components/search/search.component';
     AppComponent,
     ProductListComponent,
     ProductCategoryMenuComponent,
-    SearchComponent
+    SearchComponent,
+    ProductDetailComponent
   ],
   imports: [
     AppRoutingModule,
